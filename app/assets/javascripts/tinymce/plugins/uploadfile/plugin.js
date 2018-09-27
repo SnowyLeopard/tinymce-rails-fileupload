@@ -170,7 +170,8 @@
       function buildHTML(json) {
         var url = json["document"]["url"];
         var title = json["document"]["title"];
-        var link = '<a href="' + url + '" title="' + title + '">' + title + '</a>';
+        var target = '_blank';
+        var link = '<a href="' + url + '" title="' + title + '" + '" target="' + target + '">' + title + '</a>';
         
         return link;
       }
